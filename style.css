@@ -1,1 +1,105 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family:'Quicksand', sans-serif; ;
+    background-color: #e7e5e4;
+    display: flex;
+    flex-direction: column;
+}
 
+.header {
+    font-size: 80px;
+    text-align: center;
+    cursor: default;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 30px;
+    cursor:default;
+}
+
+.p1,.p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.x,.o {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.o {
+    color: #ef4444;
+}
+
+.refresh {
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.refresh svg:hover {
+    transform: scale(1.5);
+}
+
+.main {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 20px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "#1 #2 #3"
+    "#4 #5 #6"
+    "#7 #8 #9";
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 2px black; 
+}
+
+.tile {
+    background-color: white;
+    min-width: 150px;
+    min-height: 150px;
+    border: 3px solid black;
+    cursor: pointer;
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.tile:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.footer {
+    color: white;
+    background-color: #1e293b;
+    margin-top: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.foot {
+    cursor: default;
+}
+
+#alert {
+    font-weight: bolder;
+}
